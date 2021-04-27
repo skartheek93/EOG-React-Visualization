@@ -7,7 +7,10 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header';
 import Wrapper from './components/Wrapper';
-import NowWhat from './components/NowWhat';
+import Switches from './components/Switches';
+import MultiChart from './components/MultiChart';
+import Subscription from './Features/Subscription/subscription';
+import MultipleMetrics from './Features/MultipleMetrics/multipleMetrics';
 
 const store = createStore();
 const theme = createMuiTheme({
@@ -29,8 +32,11 @@ const App = () => (
     <CssBaseline />
     <Provider store={store}>
       <Wrapper>
+        <MultipleMetrics />
+        <Subscription />
         <Header />
-        <NowWhat />
+        <Switches />
+        <MultiChart />
         <ToastContainer />
       </Wrapper>
     </Provider>
