@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';
 import Weather from '../Features/Weather/Weather';
-import HeartBeat from '../Features/Heartbeat/Heartbeat.js';
+import HeartBeat from '../Features/Heartbeat/Heartbeat';
 
 const useStyles = makeStyles({
   grow: {
@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 export default () => {
   const classes = useStyles();
 
-  const name = "kartheek's";
+  const name = "Kartheek's";
   return (
     <AppBar position="static">
       <Toolbar>
